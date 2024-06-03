@@ -6,15 +6,24 @@ import { AppComponent } from './app.component';
 import { CrearProductoComponent } from './components/crear-producto/crear-producto.component';
 import { ListarProductosComponent } from './components/listar-productos/listar-productos.component';
 
+
+import { ReactiveFormsModule } from '@angular/forms';
+import { CrearCategoriaComponent } from './components/crear-categoria/crear-categoria.component';
+import { ListarCategoriasComponent } from './components/listar-categorias/listar-categorias.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     CrearProductoComponent,
-    ListarProductosComponent
+    ListarProductosComponent,
+    CrearCategoriaComponent,
+    ListarCategoriasComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
