@@ -5,9 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CrearProductoComponent } from './components/crear-producto/crear-producto.component';
 import { ListarProductosComponent } from './components/listar-productos/listar-productos.component';
-
-
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 import { CrearCategoriaComponent } from './components/crear-categoria/crear-categoria.component';
 import { ListarCategoriasComponent } from './components/listar-categorias/listar-categorias.component';
 
@@ -22,8 +22,8 @@ import { ListarCategoriasComponent } from './components/listar-categorias/listar
   imports: [
     BrowserModule,
     AppRoutingModule,
-    
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
